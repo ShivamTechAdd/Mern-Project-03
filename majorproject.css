@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lato&family=Noto+Sans:wght@300&family=Poppins:wght@300&family=Roboto:ital,wght@0,400;1,500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    /* 1rem=10px */
+}
+h1,
+h2,
+h3,
+h5,
+h6{
+    font-family: 'Bungee Spice', sans-serif;
+    
+}
+
+p,li a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    font-weight: 400;
+    color: var(--para-color);
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/*****  theme Section *****/
+:root{
+--main-color:#0062ff;
+--para-color:#504e4d;
+--supporting-color:#ebf3fe;
+--bg-color:white;
+--heading-color:#000a19;
+
+}
+/**** End  theme Section *****/
+
+/***** navbar Section *****/
+.container{
+  max-width: 142rem;  
+  margin: 0 auto;
+  padding: 9.6rem 2.4rem;
+}
+.section-navbar{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.section-navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 0;
+}
+.navbar ul{
+    display: flex;
+    gap: 3.2rem;
+    /* text-transform: capitalize; */
+
+    & li a{
+        color: var(--heading-color);
+        text-transform: uppercase;
+        font-weight: 60rem;
+        font-size: 1.6rem;
+        display: inline-block;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: -.3rem;
+            left: 0;
+            width:100%;
+            border-bottom: .2rem solid var(--main-color);
+            transition: all 3s;
+            -webkit-transition: all .3s;
+            -moz-transition: all 3s;
+            -ms-transition: all 3s;
+            -o-transition: all 3s;
+        }
+}
+  
+}
+
+
+/***** End navbar Section *****/
+
+/*****  hero Section *****/
+.grid{
+    display: grid;
+}
+.grid-two--cols{
+    grid-template-columns: repeat(2.1fr);
+}
+/***** End  hero Section *****/

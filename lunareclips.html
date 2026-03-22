@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #efefef;
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            place-items: center;
+        }
+        .main{
+            width: 40vh;
+            aspect-ratio: 1;
+            background-color: #ffbb5c;
+            display: grid;
+            place-items: center;
+            border-radius: 12px;
+            animation: color 10s ease-in-out;
+        }
+        @keyframes color{
+            0%{
+                background-color: #ffbb5c;
+            }
+            25%{
+                background-color: #fcbf49;
+            }
+            50%{
+                background-color: #000000;
+            }
+            75%{
+                background-color: #fcbf49;
+            }
+            100%{
+                background-color: #fcbf49;
+            }
+        }
+        .inside{
+            width: 14vw;
+            aspect-ratio: 1;
+            background-color: #e25e3e;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+
+            /* nexting  making a box without using elements */
+            &::after{
+                content: "";
+                width: inherit;
+                aspect-ratio: 1;
+                background-color: #000000;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius:inherit;
+                animation: eclipse 10s ease-in-out infinite 1s;
+            }
+
+        }
+        @keyframes eclipse{
+            0%{
+                translate: 100%;
+                scale: 1;
+            }
+            50%{
+                translate: 0%;
+                scale: .9;
+            }
+            100%{
+                translate: -100%;
+                scale:.9;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="inside"></div>
+    </div>
+</body>
+</html>
