@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@800;900&family=Oswald:wght@300;400;700&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Poppins&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+}
+.main{
+    height: 80vh;
+    background-image: url("./images/banner.jpg");
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:max(1200px,100vw);
+}
+.main .box{
+    height: 80vh;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    background-color: black;
+   
+}
+nav{
+    max-width: 60vw;
+    height: 62px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    color: red;
+    height: 114px;
+    position: relative;
+    z-index: 1;
+    margin-top: 30px;
+}
+nav img:hover{
+    box-shadow: 0 0 2px 10px transparent;
+    opacity: 1;
+}
+nav button{
+    height: 34px;
+    width: 83px;
+    padding:5px;
+    margin: 5px;
+    margin-top: 30px;
+    position: relative;
+    z-index: 10;
+    border-radius: 2px;
+    color: white;
+    
+}
+nav .english{
+    background: transparent;
+    width: 110px;
+    position: relative;
+    z-index: 12;
+    font-size: 20px;
+}
+nav .english:hover{
+    box-shadow: 0 0 1.0px 10px transparent;
+    font-weight: 600;
+}
+nav .sign-in{
+    background: red;
+    width: 100px;
+    font-size: 20px;
+    margin-left: 25px;
+    padding-bottom: 10px;
+}
+nav .sign-in:hover{
+    opacity:0.8;
+    box-shadow: 0 0 1.0px 10px transparent;
+}
+.hero{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    opacity: 1;
+    font-size: 34px;
+    position: relative;
+    gap: 20px;
+    font-family: 'Martel Sans', sans-serif;
+    margin-top: 84px;
+    padding: 23px;
+    text-align: center;
+}
+.hero .first{
+font-weight: bolder;
+font-size: 48px;
+font-family: 'Popines', sans-serif;
+text-align: center;
+}
+.hero .second{
+    font-weight: 900;
+    font-size: 38px;
+    font-family: 'Martel Sans', sans-serif;
+    text-align: center;
+}
+.hero .third{
+font-weight: 900;
+font-size: 28px;
+font-family: 'Martel Sans', sans-serif;
+text-align: center;
+}
+.hero input{
+   
+     width: 182px;
+     height: 44px;
+    font-size: 20px;
+    font-weight: 900;
+    color: red;
+    opacity: 1;
+    border-radius: 5px;
+}
+.hero button{
+    width: 182px;
+    height: 44px;
+    font-size: 16px;
+    font-weight: 900;
+    color: white;
+    padding: 5px;
+    background-color: red;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+.hero button:hover{
+    background-color: red;
+    opacity: 1;
+    font-weight: 900;
+}
+.seperation{
+    height: 8px;
+    background-color: gray;
+    opacity: 0.9;
+    margin-top: 524px;
+}
+.first-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+  padding: 100px;
+}
+.sec-image{
+    position:relative;
+}
+.sec-image img{
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+.sec-image video{
+    position: absolute;
+    top: 51px;
+    right:0;
+}
+.txt h3{
+    font-size: 43px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Popins' sans-serif;
+    margin-bottom: 20px;
+}
+.txt p{
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    font-family: 'Popins' sans-serif;
+}
+.main hr{
+    background-color: gray;
+    height: 8px;
+    width: 100%;
+    opacity:0.8;
+}
+.sec-image .pip{
+    width: 100px;
+    height: 150px;
+    position: relative;
+    bottom: 70px;
+    left: 190px;
+}
+.first-section .sec-image .div-two{
+    flex-direction: row-reverse;
+}
+
+.sec-image .div-three img{
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+.sec-image video{
+    width: 20vw;
+    position: absolute;
+    top: 31px;
+    right:80px;
+}
+
+.form{
+    width: 80vw;
+    height: 260px;
+    color: white;
+    position: relative;
+}
+.form .box{
+    width: 80vw;
+    height: 85vh;
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    justify-content:center ;
+    margin-left:220px;
+}
+.form h2{
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 20px;
+    font-size: 56px;
+    font-weight: 900;
+    color: white;
+}
+.form .box .sub-division p{
+    width:90%;
+    height: 56px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: white;
+    opacity: 1;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: rgb(94, 88, 88);
+    font-family: 'Oswald' sans-serif;
+}
+.form .box .sub-division p:hover{
+    background-color: grey;
+    color: aliceblue;
+    opacity: 1;
+    font-weight: 700;
+    box-shadow: 0 0 1px 5px grey;
+}
+.form .cta{
+    position: relative;
+    top: 580px;
+    left: 480px;
+    padding: 30px;
+}
+.form .cta input{
+    font-size: 16px;
+    width: 250px;
+    padding: 8px;
+}
+.form .cta button{
+    margin: 20px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    width: 200px;
+    height: 46px;
+    transition: 0.5s;
+}
+.form .cta button:hover{
+    background-color: rgb(202, 35, 35);
+    box-shadow: 0 0 1px 2px gray;
+}
+.form .cta .pone{
+font-size: 19px;
+color: white;
+font-family: 'Popins' sans-serif;
+text-align:left;
+}
+.hr{
+    height: 8px;
+    position:absolute;
+    top:3840px;
+}
+.footer{
+    height: 30px;
+    width: 100%;
+    color: white;
+}
+.footer p{
+    position: relative;
+    top: 600px;
+    left: 590px;
+    padding: 30px;
+}
